@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- متاتگ اینماد -->
     <meta name="enamad" content="61081844" />
-    <title>61081844</title>
+    <title>آزمون‌یار پزشکی | Medical ProMax</title>
     
     <!-- فونت وزیرمتن و تیلویند -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
@@ -70,17 +71,35 @@
 
     <!-- محتوای اصلی -->
     <main id="app-container" class="container mx-auto p-4 flex-grow">
-        <!-- اینجا توسط جاوااسکریپت پر می‌شود -->
+        <!-- محتوا توسط جاوااسکریپت بارگذاری می‌شود -->
     </main>
 
     <!-- فوتر -->
-    <footer class="bg-slate-800 text-slate-400 py-6 text-center text-sm mt-auto">
-        <p>برگرفته از پنجاه و دومین دوره آزمون پذیرش دستیار تخصصی پزشکی (۱۴۰۴)</p>
-        <p class="mt-1">طراحی شده جهت آمادگی آزمون‌های دستیاری و پره</p>
+    <footer class="bg-slate-800 text-slate-400 py-10 text-center text-sm mt-auto">
+        <div class="container mx-auto px-4 flex flex-col items-center gap-6">
+            
+            <!-- بخش اطلاعات و تماس -->
+            <div class="w-full max-w-md border-b border-slate-700 pb-6">
+                <h3 class="text-lg font-bold text-white mb-3">اطلاعات و تماس با ما</h3>
+                <div class="flex items-center justify-center gap-2 text-slate-300 bg-slate-700/50 py-2 px-4 rounded-lg inline-block">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                    <span>ایمیل: info@medicalpromax.ir</span>
+                </div>
+            </div>
+            
+            <!-- بخش نماد اعتماد الکترونیک (اینماد) -->
+            <!-- طبق دستورالعمل: کد بدون تغییر درج شده است -->
+            <!-- یک پس‌زمینه سفید برای خوانایی لوگو اضافه شده اما کد دست‌نخورده است -->
+            <div class="bg-white p-4 rounded-xl shadow-lg inline-block">
+                <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=684480&Code=SeIzu991AuCBdT5NK0UbkAn7bdGULUal'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=684480&Code=SeIzu991AuCBdT5NK0UbkAn7bdGULUal' alt='' style='cursor:pointer' code='SeIzu991AuCBdT5NK0UbkAn7bdGULUal'></a>
+            </div>
+
+            <p class="text-xs text-slate-600">تمامی حقوق محفوظ است © ۱۴۰۴</p>
+        </div>
     </footer>
 
     <script>
-        // --- دیتابیس سوالات (استخراج شده از متن ارسالی کاربر) ---
+        // --- دیتابیس سوالات ---
         const questionsDB = {
             internal: {
                 id: 'internal',
@@ -92,27 +111,27 @@
                         {
                             q: "انجام MRI قلب با داشتن تمام موارد زیر مجاز است بجز:",
                             options: ["دریچه فلزی قلبی", "سیم‌های استرنوتومی", "سیم‌های پیس‌میکر", "استنت‌های کرونر"],
-                            correct: 2, // سیم‌های پیس میکر
+                            correct: 2, 
                             note: "انجام MRI در بیماران دارای پیس‌میکر (مگر انواع خاص MR-Conditional) ممنوع است."
                         },
                         {
                             q: "آقای ۳۵ ساله ورزشکار که دچار یک نوبت سنکوپ شده... در صورت وجود کدامیک از شرایط زیر بیمار باید بستری گردد؟",
                             options: ["Sinus bradycardia with HR: 52", "Non-sustained Ventricular Tachycardia", "Left Anterior Fascicular block", "Family History of Syncope"],
-                            correct: 1, // NSVT
-                            note: "وجود تاکی‌کاردی بطنی ناپایدار (NSVT) در بیمار با سنکوپ یک علامت هشدار دهنده برای مرگ ناگهانی قلبی است و نیاز به بستری دارد."
+                            correct: 1, 
+                            note: "وجود تاکی‌کاردی بطنی ناپایدار (NSVT) در بیمار با سنکوپ یک علامت هشدار دهنده برای مرگ ناگهانی قلبی است."
                         },
                         {
                             q: "آقای ۷۰ ساله با سابقه CABG مراجعه نموده است. LDL=150 است. کدام درمان مناسب‌تر است؟",
                             options: ["Simvastatin 40 mg", "Pravastatin 80 mg", "Atorvastatin 20 mg", "Rosuvastatin 20 mg"],
-                            correct: 3, // Rosuvastatin 20
-                            note: "در بیماران High Risk قلبی، نیاز به درمان با استاتین‌های با توان بالا (High intensity) مانند آتورواستاتین 40-80 یا روزوواستاتین 20-40 است."
+                            correct: 3, 
+                            note: "در بیماران High Risk قلبی، نیاز به درمان با استاتین‌های با توان بالا (High intensity) است."
                         }
                     ],
                     pre: [
                          {
                             q: "آقای ۶۰ ساله با تنگی نفس شدید مراجعه کرده. فشار خون ۱۹۵/۱۲۰. کدام دارو برای کنترل فشار مناسب نیست؟",
                             options: ["Esmolol", "Nitroprusside", "Clevidipine", "Nitroglycerine"],
-                            correct: 3, // Nitroglycerine (طبق سوال بجز)
+                            correct: 3, 
                             note: "این سوال از متن آزمون استخراج شده و به عنوان نمونه در بخش پره قرار گرفت."
                         }
                     ],
@@ -129,14 +148,14 @@
                         {
                             q: "بیماری که ۴۸ ساعت قبل بصورت الکتیو ترمیم هرنی اینگوینال شده است... زخم وی تا چه زمانی نیاز به پانسمان دارد؟",
                             options: ["تا یک هفته بعد از عمل", "تا ۴۸ ساعت دیگر", "تا زمان کشیدن بخیه‌ها", "دیگر نیاز به پانسمان ندارد"],
-                            correct: 3, // دیگر نیاز ندارد
+                            correct: 3, 
                             note: "زخم‌های جراحی بسته معمولاً پس از ۴۸ ساعت اپی‌تلیالیزه شده و نیاز به پانسمان ندارند مگر ترشح داشته باشند."
                         },
                         {
                             q: "خانم ۲۵ ساله‌ای با توده پستان راست، درد شدید و فلوکچواسیون مراجعه کرده. کدام جمله صحیح است؟",
                             options: ["شیردهی ممنوع است", "تخلیه اورژانسی و پاتولوژی لازم است", "درمان ارجح آنتی‌بیوتیک و آسپیراسیون سوزنی مکرر", "احتمال فیستول در جراحی و سونو یکسان است"],
-                            correct: 2, // آسپیراسیون و آنتی بیوتیک
-                            note: "در ماستیت و آبسه پستان، خط اول درمان درناژ با سوزن (آسپیراسیون) و آنتی‌بیوتیک است. انسزیون جراحی خط آخر است."
+                            correct: 2, 
+                            note: "در ماستیت و آبسه پستان، خط اول درمان درناژ با سوزن (آسپیراسیون) و آنتی‌بیوتیک است."
                         }
                     ],
                     pre: [], custom: []
@@ -152,16 +171,13 @@
                         {
                             q: "در معاینه پسر ۳ ساله‌ای سوفل پان‌سیستولیک در کناره چپ قلب سمع می‌شود. CXR و ECG طبیعی. تشخیص؟",
                             options: ["نارسایی آئورت", "نارسایی میترال", "تنگی دریچه ریوی", "نقص دیواره بین دهلیزی"],
-                            correct: 3, // VSD (البته سوال نقص دهلیزی ASD گفته، اما پان سیستولیک مشخصه VSD یا MR است. با توجه به گزینه‌ها و متن، احتمالا منظور سوال VSD کوچک بوده ولی در گزینه‌ها ASD آمده که سوفل آن معمولا ejection است. طبق کلید محتمل: نقص دیواره دهلیزی گزینه د است ولی توضیحات بالینی به VSD میخورد. اینجا طبق متن آزمون رفتار میکنیم)",
-                            // تصحیح: سوال 70 دفترچه A. گزینه د نقص دیواره بین دهلیزی است که سوفل آن معمولا midsystolic است. نارسایی میترال پان سیستولیک است. اما در کودکان VSD شایعترین است. 
-                            // فرض بر VSD است اما چون در گزینه‌ها نیست و متن کپی شده، ما عیناً نمایش می‌دهیم. پاسخ محتمل طبق کلیدهای رایج سوالات مشابه نارسایی میترال یا VSD است.
-                            // بیایید سوال 71 را انتخاب کنیم که واضح تر است.
+                            correct: 3, 
                             note: "توضیح: سوفل پان سیستولیک معمولاً در VSD یا MR شنیده می‌شود."
                         },
                         {
                             q: "پسری ۸ ساله با صرع ابسنس که با اتوسوکسیماید درمان می‌شود، اخیراً دچار تشنج تونیک-کلونیک شده. درمان انتخابی؟",
                             options: ["تغییر به والپروات سدیم", "افزایش دوز اتوسوکسیماید", "افزودن لاموتریژین", "افزودن لوتیراستام"],
-                            correct: 0, // والپروات
+                            correct: 0, 
                             note: "والپروات سدیم داروی انتخابی برای تشنج‌های مخلوط (ابسنس + تونیک کلونیک) است."
                         }
                     ],
@@ -171,20 +187,20 @@
             obgyn: {
                 id: 'obgyn',
                 title: 'زنان و زایمان',
-                icon: 'baby', // Using baby icon as distinct from generic health
+                icon: 'baby', 
                 color: 'bg-pink-100 text-pink-600',
                 exams: {
                     residency: [
                         {
                             q: "خانم باردار ۳۷ هفته با پارگی کیسه آب و ضایعات هرپسی فعال در صورت و پستان مراجعه کرده. کدام صحیح است؟",
                             options: ["سزارین", "آسیکلوویر و زایمان طبیعی ۴۸ ساعت بعد", "زایمان واژینال", "آسیکلوویر و سزارین ۴۸ ساعت بعد"],
-                            correct: 2, // زایمان واژینال
-                            note: "هرپس تناسلی اندیکاسیون سزارین است. هرپس در صورت و پستان (غیر تناسلی) مانع زایمان طبیعی نیست، فقط باید ضایعات پوشانده شوند."
+                            correct: 2, 
+                            note: "هرپس در صورت و پستان (غیر تناسلی) مانع زایمان طبیعی نیست، فقط باید ضایعات پوشانده شوند."
                         },
                         {
                             q: "خانم باردار ۳۱ هفته با تشنج (اکلامپسی). پس از ۴ گرم سولفات منیزیوم، بعد از ۲۰ دقیقه مجدد تشنج می‌کند. اقدام ارجح؟",
                             options: ["ختم بارداری اورژانس", "تزریق ۱۰ میلی‌گرم دیازپام", "اینتوبه کردن", "تویجویز مجدد ۲ گرم سولفات منیزیوم"],
-                            correct: 3, // 2 گرم سولفات
+                            correct: 3, 
                             note: "در تشنج راجعه اکلامپسی، دوز مجدد سولفات منیزیوم (۲ گرم) داده می‌شود."
                         }
                     ],
@@ -201,7 +217,7 @@
                          {
                             q: "بیماری با انسداد شریان بازیلار و استروک ناحیه پونز. کدام الگوی تنفسی محتمل‌تر است؟",
                             options: ["افزایش تعداد و عمق (Central Neurogenic)", "شین-استوکس", "آپنوستیک (دم عمیق و وقفه)", "آتاکسیک"],
-                            correct: 2, // آپنوستیک
+                            correct: 2, 
                             note: "تفس آپنوستیک (Apneustic) ناشی از ضایعه در ناحیه پونز (پل مغزی) است."
                         }
                     ], pre: [], custom: []
@@ -217,7 +233,7 @@
                         {
                             q: "در درگیری ستون فقرات در بروسلوز، کدام یافته رادیولوژیک نسبت به سل در مراحل اولیه شایع‌تر است؟",
                             options: ["Canal compression", "Diskitis", "Psoas abscess", "Anterolateral osteophyte"],
-                            correct: 3, // استئوفیت
+                            correct: 3, 
                             note: "استئوفیت‌های قدامی-جانبی (منقار طوطی) در بروسلوز شایع‌تر و زودرس‌تر از سل هستند."
                         }
                     ], pre: [], custom: []
@@ -233,7 +249,7 @@
                         {
                             q: "در مورد رادیوگرافی نرمال قفسه صدری (فرونتال) تمام گزینه‌ها صحیح است بجز:",
                             options: ["افتراق شریان‌ها از وریدها مقدور نیست", "برونش‌های نرمال دیده نمی‌شوند", "ناف ریه چپ بالاتر از راست است", "سایز عروق در قله ریه‌ها بیشتر از قاعده است"],
-                            correct: 3, // سایز عروق
+                            correct: 3, 
                             note: "در حالت ایستاده، به دلیل جاذبه، سایز عروق در قاعده (Base) ریه بیشتر از قله (Apex) است. گزینه د غلط است."
                         }
                     ], pre: [], custom: []
@@ -249,7 +265,7 @@
                         {
                             q: "در زمان بحران بهداشت عمومی با منابع محدود (مثل ونتیلاتور)، کدام گزینه در تخصیص منابع اولویت دارد؟",
                             options: ["زمان مراجعه (First come)", "وضعیت اجتماعی", "احتمال بقا و سود کلی از درمان", "تخصیص مساوی"],
-                            correct: 2, // احتمال بقا
+                            correct: 2, 
                             note: "در تریاژ بحران، اصل فایده‌گرایی (Utilitarianism) و نجات بیشترین جان‌ها با بیشترین احتمال بقا حاکم است."
                         }
                     ], pre: [], custom: []
@@ -259,18 +275,18 @@
 
         // --- مدیریت وضعیت برنامه ---
         let currentState = {
-            view: 'home', // home, exam-select, quiz, result
+            view: 'home', 
             subjectId: null,
-            examType: null, // residency, pre, custom
+            examType: null, 
             currentQuestionIndex: 0,
             score: 0,
-            answers: [], // {qIndex, selectedOption, isCorrect}
+            answers: [], 
             questionsList: []
         };
 
         // --- توابع رندرینگ ---
 
-        // 1. صفحه اصلی (لیست دروس)
+        // 1. صفحه اصلی
         function renderHome() {
             currentState.view = 'home';
             document.getElementById('back-btn').classList.add('hidden');
@@ -296,7 +312,7 @@
             lucide.createIcons();
         }
 
-        // 2. صفحه انتخاب نوع آزمون (سه آیکون)
+        // 2. صفحه انتخاب نوع آزمون
         function selectSubject(id) {
             currentState.subjectId = id;
             currentState.view = 'exam-select';
@@ -316,7 +332,6 @@
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <!-- دکمه آزمون دستیاری -->
                         <div onclick="startExam('residency')" class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition group border-b-4 border-blue-500">
                             <div class="bg-blue-50 p-6 flex justify-center items-center h-32">
                                 <i data-lucide="graduation-cap" class="w-16 h-16 text-blue-600 group-hover:scale-110 transition"></i>
@@ -327,7 +342,6 @@
                             </div>
                         </div>
 
-                        <!-- دکمه آزمون پره -->
                         <div onclick="startExam('pre')" class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition group border-b-4 border-teal-500">
                             <div class="bg-teal-50 p-6 flex justify-center items-center h-32">
                                 <i data-lucide="book-open-check" class="w-16 h-16 text-teal-600 group-hover:scale-110 transition"></i>
@@ -338,7 +352,6 @@
                             </div>
                         </div>
 
-                        <!-- دکمه تالیفی -->
                         <div onclick="startExam('custom')" class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition group border-b-4 border-purple-500">
                             <div class="bg-purple-50 p-6 flex justify-center items-center h-32">
                                 <i data-lucide="pen-tool" class="w-16 h-16 text-purple-600 group-hover:scale-110 transition"></i>
@@ -354,17 +367,16 @@
             lucide.createIcons();
         }
 
-        // 3. شروع آزمون و منطق آن
+        // 3. شروع آزمون
         function startExam(type) {
             const subject = questionsDB[currentState.subjectId];
             const questions = subject.exams[type];
 
             if (!questions || questions.length === 0) {
-                // اگر سوالی نبود، از سوالات دستیاری به عنوان پیش‌فرض استفاده کن (برای دمو)
                 currentState.questionsList = subject.exams['residency'];
                 if(currentState.questionsList.length === 0) {
-                     alert("سوالات این بخش هنوز بارگذاری نشده‌اند.");
-                     return;
+                      alert("سوالات این بخش هنوز بارگذاری نشده‌اند.");
+                      return;
                 }
             } else {
                 currentState.questionsList = questions;
@@ -388,7 +400,6 @@
             
             container.innerHTML = `
                 <div class="max-w-3xl mx-auto fade-in pb-20">
-                    <!-- هدر سوال -->
                     <div class="flex justify-between items-center mb-4 text-sm text-gray-500">
                         <span>سوال ${qIndex + 1} از ${totalQ}</span>
                         <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded">
@@ -396,13 +407,11 @@
                         </span>
                     </div>
 
-                    <!-- کارت سوال -->
                     <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-6">
                         <h3 class="text-xl font-bold text-gray-800 leading-9 mb-6 text-justify">
                             ${questionData.q}
                         </h3>
 
-                        <!-- گزینه‌ها -->
                         <div class="space-y-3" id="options-container">
                             ${questionData.options.map((opt, idx) => `
                                 <button onclick="handleAnswer(${idx})" 
@@ -417,12 +426,10 @@
                         </div>
                     </div>
 
-                    <!-- بخش پاسخ تشریحی (ابتدا مخفی) -->
                     <div id="feedback-area" class="hidden fade-in bg-white rounded-xl shadow border-r-4 p-6 mb-6">
                         <!-- محتوا با JS پر می‌شود -->
                     </div>
 
-                    <!-- دکمه بعدی -->
                     <div class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] flex justify-end">
                          <div class="container mx-auto max-w-3xl flex justify-between items-center">
                             <div class="text-sm font-bold text-gray-400">
@@ -449,7 +456,6 @@
             const feedbackArea = document.getElementById('feedback-area');
             const nextBtn = document.getElementById('next-btn');
 
-            // ذخیره پاسخ
             currentState.answers[qIndex] = {
                 selected: selectedIndex,
                 correct: correctIndex
@@ -457,17 +463,14 @@
 
             if(selectedIndex === correctIndex) currentState.score++;
 
-            // غیرفعال کردن دکمه‌ها
             const buttons = optionsContainer.querySelectorAll('button');
             buttons.forEach(btn => btn.disabled = true);
 
-            // استایل دهی به دکمه‌ها
             const selectedBtn = document.getElementById(`btn-opt-${selectedIndex}`);
             const correctBtn = document.getElementById(`btn-opt-${correctIndex}`);
             const selectedBadge = selectedBtn.querySelector('div');
             const correctBadge = correctBtn.querySelector('div');
 
-            // اگر غلط زد
             if (selectedIndex !== correctIndex) {
                 selectedBtn.classList.remove('bg-gray-50', 'border-gray-200');
                 selectedBtn.classList.add('bg-red-50', 'border-red-500', 'text-red-700');
@@ -476,14 +479,12 @@
                 selectedBadge.innerHTML = '<i data-lucide="x" class="w-4 h-4"></i>';
             }
 
-            // نمایش گزینه صحیح (همیشه سبز شود)
             correctBtn.classList.remove('bg-gray-50', 'border-gray-200');
             correctBtn.classList.add('bg-green-50', 'border-green-500', 'text-green-700', 'shadow-md');
             correctBadge.classList.remove('border-gray-300', 'text-gray-400');
             correctBadge.classList.add('border-green-500', 'bg-green-500', 'text-white');
             correctBadge.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i>';
 
-            // نمایش باکس توضیحات
             feedbackArea.classList.remove('hidden');
             feedbackArea.classList.add(selectedIndex === correctIndex ? 'border-green-500' : 'border-red-500');
             
@@ -508,7 +509,6 @@
                 </div>
             `;
 
-            // فعال کردن دکمه بعدی
             nextBtn.disabled = false;
             nextBtn.classList.remove('bg-gray-300');
             nextBtn.classList.add('bg-blue-600', 'hover:bg-blue-700');
@@ -607,11 +607,5 @@
         renderHome();
 
     </script>
-
-    <!-- eNAMAD Logo -->
-    <div style="margin-top: 40px; padding: 20px; text-align: center;">
-        <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=684480&Code=SeIzu991AuCBdT5NK0UbkAn7bdGULUal'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=684480&Code=SeIzu991AuCBdT5NK0UbkAn7bdGULUal' alt='eNAMAD' style='cursor:pointer' code='SeIzu991AuCBdT5NK0UbkAn7bdGULUal'></a>
-    </div>
-
 </body>
 </html>
