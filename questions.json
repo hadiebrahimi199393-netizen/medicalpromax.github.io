@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "degree": "med",                  // med = پزشکی، dent = دندان
+      "exam_group": "pre",              // pre, residency, board, dent_pre, dent_res, dent_board
+      "year": 1402,
+      "month": "اردیبهشت",              // برای پره، ماه؛ برای دستیاری می‌تونه خالی باشه
+      "subject_id": "internal",         // شناسه کوتاه درس
+      "subject_title": "بیماری‌های داخلی",
+      "exam_label": "پره‌انترنی 1402 اردیبهشت",
+      "q": "متن سؤال اینجا...",
+      "options": [
+        "گزینه الف",
+        "گزینه ب",
+        "گزینه ج",
+        "گزینه د"
+      ],
+      "correct": 2,
+      "note": "توضیح و نکته آموزشی سؤال."
+    }
+  ]
+}
